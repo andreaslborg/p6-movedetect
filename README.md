@@ -1,5 +1,3 @@
-[![Pytest](https://github.com/andreaslborg/p6-movedetect/actions/workflows/pylinter.yml/badge.svg?branch=main)](https://github.com/andreaslborg/p6-movedetect/actions/workflows/pylinter.yml)
-
 # MoveDetect
 Bachelor project: Real-time Voluntary Movement Detection using EEG signals
 
