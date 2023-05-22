@@ -1,3 +1,5 @@
+[![Pytest](https://github.com/andreaslborg/p6-movedetect/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/andreaslborg/p6-movedetect/actions/workflows/main.yml)
+
 # MoveDetect
 Bachelor project: Real-time Voluntary Movement Detection using EEG signals
 
