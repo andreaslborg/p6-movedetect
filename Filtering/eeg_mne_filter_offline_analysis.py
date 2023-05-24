@@ -10,7 +10,7 @@ from scipy import signal
 """
 Constant values and parameters.
 """
-SUBJECT_NO = 4      # Change this number to the subject you want to analyse.
+SUBJECT_NO = 2      # Change this number to the subject you want to analyse.
 FILTERED_CSV_FILE_NAME = f'Filtering/filtered/ABCII000{SUBJECT_NO}_filteredData.csv'
 RAW_CSV_FILE_NAME = f'Filtering/data/raw_data_sorted/ABCII000{SUBJECT_NO}_Session_1_rawData_filtered.csv'
 EEG_COLS = ['Raw Channel Z', 'Raw Channel One', 'Raw Channel Two', 'Raw Channel Three', 'Raw Channel Four']
@@ -146,13 +146,13 @@ def plot_graphs(unfiltered_movement, eeg_data, mne_eeg_array,
     axs[0, 1].set_title('RAW PSD Analysis')
     axs[0, 1].semilogy(freq1, psd1, label=EEG_COLS[0])
     axs[0, 1].set_xlabel('Frequency (Hz)')
-    axs[0, 1].set_ylabel('Amplitude')
+    axs[0, 1].set_ylabel('PSD [(ADC Level^2) / Hz]')
     axs[0, 1].legend(loc='upper right')
 
     axs[1, 1].set_title('Filtered PSD Analysis')
     axs[1, 1].semilogy(freq2, psd2, label=EEG_COLS[0])
     axs[1, 1].set_xlabel('Frequency (Hz)')
-    axs[1, 1].set_ylabel('Amplitude')
+    axs[1, 1].set_ylabel('PSD [(ADC Level^2) / Hz]')
     axs[1, 1].legend(loc='upper right')
     
     axs[1, 2].set_title(f'Subject {SUBJECT_NO} - MRCP')
